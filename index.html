@@ -378,7 +378,6 @@
     </main>
 
     <!-- FOOTER SECTION -->
-
     <footer class="lastpart">
       <div class="foot-div container">
         <div class="footer-div-logo">
@@ -434,12 +433,21 @@
             name="signup_form"
             autocomplete="on"
             novalidate
-            placeholder="E-mail"
           >
             <label class="lbl">
-              <input type="email" name="email" />
+              <input
+                type="email"
+                name="email"
+                placeholder="email"
+                class="placeh"
+              />
             </label>
-            <button type="Subscribe" class="btn-subscribe"></button>
+            <button type="submit" class="btn-subscribe">
+              Subscribe
+              <svg width="24" height="24" class="subs-logo">
+                <use href="./images/icons.svg#airplane"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
