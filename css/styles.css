@@ -1079,6 +1079,10 @@ resize: none;
     fill: transparent;
 }
 
+.check {
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .check-link {
 
@@ -1106,23 +1110,8 @@ resize: none;
 input:checked + .privacy .policy {
     
     border: none;
+    background-color: var(--check-color);
+    fill: #4d5ae5;
     
 }
 
-input:checked + .privacy .policy {
-
-    background-color: var(--check-color);
-
-
-}
-
-input:checked + .privacy .policy {
-
-    fill: var(--light-color);
-
-}
-
-input:focus + .privacy .policy {
-
-    fill:#4d5ae5;
-}
